@@ -1,0 +1,106 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas: 'header header' 'left right'
+} 
+        /* display grid um tipo de card */
+        /*grid-template columns define o tamanho da colunas */
+        /* grid template rows o tamanho */
+        /* grid template areas define os tamanhos do 60% e 40% */
+
+header{
+    grid-area: header;
+} 
+    /* vai ser o cabeçalho que no caso vai ser 100% */
+
+
+#bg{
+    grid-area: left; /* vai usar os 60% */
+    background: url('/img/Ilustração.svg')no-repeat top/contain;
+    background-position-x: 10rem;
+}
+
+main{
+    margin-top: -12rem;
+    grid-area: right; /* vai usar os 40% */
+
+    display: flex; /* tipo de display */
+    align-items: center; /* alinha os items no centro */
+}
+
+main.container{ /* o caminho em main. container */
+    width:min(36.3rem, 100%) /* define o minimo do width */
+}
+
+main h2{
+    font-family: 'Poppins' , sans-serif; /* tipo de fonte */
+    color: var(--black); /* var cor */
+    font-size: clamp(20px, 5vw, 2.8rem); /* tamanho da fonte maximo e minimo */
+    margin-bottom: 2.4rem; /* margin para cima */
+}
+
+
+
+input{
+    border: .2rem solid var(--grey-blue);
+    padding: 0 1.6rem;
+    outline: none;
+    
+}
+
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+.seperator{
+    display: flex;
+    align-items: center;
+
+    margin: 4rem 0;
+}
+
+.seperator div:nth-child(2){
+    color: var(--grey-blue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0 1.35rem;
+    line-height: 0;
+}
+
+.seperator div:nth-child(1),
+.seperator div:nth-child(3){
+    background: var(--grey-blue);
+    width: 100%;
+    height: 1px;
+}
+
+.ball{
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--blue);
+    clip-path: circle();
+
+    position: fixed;
+
+    opacity: 0.1;
+
+}
+
+.ball.top{
+    top: -46rem;
+    right: -35rem;
+    width: 63.3rem;
+    height: 63.3rem;
+    
+}
+
+.ball.bottom{
+    right: 5.6rem;
+    bottom: -15rem;
+
+      
+}
+

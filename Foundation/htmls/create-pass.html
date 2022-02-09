@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- tipo do documento no caso html -->
+
+<head> <!-- o inicio o que vem antes do site -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0"> <!-- meta todos os sites tem -->
+
+    
+    <title>Garota Fofa</title> <!-- o titulo da janela -->
+        <link rel ="stylesheet" href = "styles/global.css"> <!-- linkando o css no html -->
+        <link rel ="stylesheet" href = "styles/home.css"> 
+
+     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font google -->
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+
+    </head> <!-- fim do head -->
+    <body> <!-- corpo do site -->
+        <div id="home" class="content"> <!-- div você atrela valores e pode adiconar varias
+        coisas a ela -->
+            <header> <!-- o cabeçalho o que fica em cima basicamente o titulo -->
+                <img src = "/public/img/Logo.svg" alt = "Rocket.Q Logo"/> <!-- linkar uma img -->
+            </header>
+
+            <div id="bg">
+                <div class="ball top"></div>
+                <div class="ball bottom"></div>
+            </div> <!-- uma div sem nada -->
+    
+            <main>
+                <div class="container"> <!-- div container  -->
+                    
+                    <section> <!-- serve pra agrupar -->
+                        <h2>Crie sua propria sala</h2> <!-- é um tipo de titulo -->
+                        <form action = "" > <!-- formulario tem função de pegar a informação -->
+                            <label class="sr-only" for="">Insira uma senha</label> <!-- sr-only uso responsivo -->
+                            <input type="passaword" id = "room-pass" placeholder="Insira uma senha"> <!-- type number so numeros pode ser digitado, placeholder é o que irar ficar escrito dentro do input -->
+                            <button>
+                                <img src = "/public/img/users 1.svg" alt="Criar Sala">
+                                Criar Sala
+                                
+                            </button>
+                        </form>
+                    </section>
+                  
+                </div>
+            </main>
+
+        </div>
+        
+
+    </body>

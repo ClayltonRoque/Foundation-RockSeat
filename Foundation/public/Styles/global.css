@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;700&display=swap'); /* font google */
+
+*{
+     margin:0;
+     padding: 0;
+     border:none;
+     text-decoration: none;
+     box-sizing: border-box;
+ } /* o site todo */
+ html{
+     --black: #0D114F;
+     --white: #FAFAFA;
+     --red: #E83F5B;
+     --ligth-blue: #E0ECFF;
+     --blue: #3485FF;
+     --background:#FBFCFF;
+     --overlay:#040911;
+     --icons-details:#A5B0C1;
+
+     --grey-drak: #4D5E77;
+     --grey-blue: #A1B2CD;
+     --grey-medium: #D3D9E2;
+     --grey-ligth: #E5EAF1;
+
+     --hover-blue: #5699FF;
+     --hover-red: #EA4B65;
+     --hover-grey: #8794A7;
+
+     font-size: 62.5%;
+
+ } /* cores definido em variaveis */
+   /* font-size 62.5% define o tamanho da font fica melhor pra usar rem mais responsivo  */
+
+
+
+ body{ display: flex;
+       height: 100vh;
+       background: var(--background); /* vh define o tamanho da altura o maximo e 100 */
+       
+}
+
+ body, textarea, button, input{ /* seleciona 4 tags */
+     font-size:clamp(14px, 1.6rem, 2vw); /* size maximo e minimo */
+     font-family: 'Open Sans', sans-serif; /* font google */
+         
+ }
+
+ .content{
+     width: 100%;
+     margin: 0 auto;
+ }
+
+  .sr-only { /* sr responsivo */
+      position:absolute;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip-path: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+}
+
+input,button, .button{ 
+    border-radius: .8rem; /* largura da borda */
+    height: 5rem;
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500; /* o peso da fonte no caso se e mais escura oh no */
+    line-height: 0; /* espaçamento entre as linhas */
+
+    display: flex;
+    align-items:center;
+    justify-content: center; /* centraliza a imagem tbm */
+
+    background: var(--blue);
+    color: var(--white);
+    
+    transition: filter .2s; /* tempo do brightness */
+    cursor: pointer; /* tipo do cursor ao passar no button */
+}
+
+button:hover, 
+.button:hover{ filter:brightness(1.2); /* brilha ao passar no button */
+
+}
+
+button > img, 
+.button > img{
+    margin-right:1rem;
+    width: 2rem;
+} /* o tamanho e o espaçamento da img do button */
+ 
+button.outlined, .button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+button.red, 
+.button.red{
+    background: var(--red);
+    color: var(--white)
+}
+
+button.grey, 
+.button.grey{
+    background: var(--grey-ligth);
+    color: var(--grey-dark);
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}
